@@ -1,0 +1,154 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* ----------------NavBar----------------- */
+
+.unordered{
+    list-style-type: none;
+    margin: 0;
+    top: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+    position: fixed;
+    
+}
+.list{
+    float: left; 
+}
+
+.list .active{
+
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.list .active:hover{
+    background-color: #111;
+}
+
+/* --------------------------------------------------- */
+
+/* -------------------ABOUT-------------------------- */
+
+.about{
+    background-image: url(back-about.jpg);
+    height: 100%;
+    width: 100%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: static;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 40px;
+    
+    
+    
+}
+
+.about .conabout{
+    border: 3px solid white;
+    position: relative;
+  top: 150px;
+  width: 700px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  opacity: 0.7;
+
+}
+
+#h1about{
+    text-align: center;
+}
+
+#pabout{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* -------------------------------------------------- */
+
+/* ----------------history------------- */
+
+.product{
+    background-color: antiquewhite;
+    height: 100%;
+    width: 100%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: static;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 0px;   
+    
+}
+
+.h1product{
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+#imgcontent1{
+    height: 200px;
+    margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#pcontent1 , #hcontent1{
+    text-align: justify;
+    margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: nowrap;
+  
+}
+
+.flex  .content1{
+
+  border: 3px solid white;
+  position: relative;
+  top: 50px;
+  width: 400px;
+  height: 450px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  opacity: 0.7;
+
+}
+
+/* ---------------------------------------- */
+
+/* --------------------Tutorial ------------------- */
+
+.tutorial{
+    background-image: url(tutorial.jpg);
+    height: 100%;
+    width: 100%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: static;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 40px;
+    
+    
+    
+}
