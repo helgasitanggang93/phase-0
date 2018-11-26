@@ -1,30 +1,28 @@
 function xo(str) {
-    // you can only write your code here!
-    var kata = str.length-1
-    var newkata=''
-    var temp =''
-    var result
-    var newkataX=''
-    var newkataO
-
-    for(i=0; i<=kata; i++){
-        if(str[i]=='o'){
-            newkataX=+str[i]
-            
-
+    var hasil=''
+    var x=0
+    var o=0
+    for(var a=0; a<str.length; a++){
+        if(str[a]=='o'){
+            o+=1
+        }else if(str[a]=='x'){
+            x+=1
         }
-         
-    }
-    return newkataX
 
+    }
+    if(x==o){
+        return true
+    }else{
+        return false
+    } 
   }
   
 //   // TEST CASES
-// //   console.log(xo('xoxoxo')); // true
-// //   console.log(xo('oxooxo')); // false
-//   console.log(xo('oxo')); // false
-// //   console.log(xo('xxxooo')); // true
-// //   console.log(xo('xoxooxxo')); // true
+  console.log(xo('xoxoxo')); // true
+  console.log(xo('oxooxo')); // false
+  console.log(xo('oxo')); // false
+  console.log(xo('xxxooo')); // true
+  console.log(xo('xoxooxxo')); // true
 
 // // //  str[i]=='x'
 //         // //  newkataX+=str[i]
