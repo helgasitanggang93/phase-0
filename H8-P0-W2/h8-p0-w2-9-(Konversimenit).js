@@ -1,16 +1,10 @@
 function konversiMenit(menit) {
     // you can only write your code here!
-    var jam
-    var conjam
-    var menit
-    var conmenit
-    var result
-
-    jam = menit/60
-    conjam = Math.floor(jam)
-    menit=(jam-conjam) * 60
-    conmenit = Math.round(menit)
-    result = conjam + ':' + conmenit
+     var jam = menit/60
+     var  conjam = Math.floor(jam)
+     var menit=(jam-conjam) * 60
+     var conmenit = Math.round(menit)
+     var result = conjam + ':' + conmenit
 
     return result
   }

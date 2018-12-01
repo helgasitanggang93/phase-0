@@ -1,16 +1,19 @@
 function bandingkanAngka(angka1, angka2) {
     // you can only write your code here!
-    var result
-    if(angka1<angka2){
-        result='true'
+    
+    if(angka1 < angka2) {
+
+        return true
         
-    }else if(angka1>angka2){
-        result='false'
-    }else{
-        result='-1'
+    } else if(angka1 > angka2) {
+       return false
+
+    } else{
+
+        return -1
     }
 
-    return result;
+
 
 
   }
