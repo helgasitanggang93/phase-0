@@ -1,23 +1,30 @@
 function digitPerkalianMinimum(angka) {
     // you can only write your code here!
-
-    for(var i = 0; i < angka; i++){
-        for(var j = 0; j < angka; j++){
-            if(i !== j && j !== i){
-                if(i * j === angka){
-                    console.log(i, '<------ini adalah i', j, '<--------ini adalah j')
+    var hasilBagi
+    var arr = []
+    var arrString = '' 
+    var res = 0
+  
+  for(var i = 1; i <= angka; i++){
+    hasilBagi = angka / i
+    arrString = i.toString() + hasilBagi.toString()
     
-                }
-
-            }
-            
-
+    
+    if (hasilBagi % 1 === 0) {
+      arr.push(arrString)
+      
+      if (res === 0) {
+        res = arrString.length
+      } else {
+        if (res > arrString.length) {
+          res = arrString.length
         }
-
+      }
     }
-    
-
-    
+  }
+  
+  return res;
+      
   }
   
   // TEST CASES
