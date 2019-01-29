@@ -1,12 +1,17 @@
 function konversiMenit(menit) {
     // you can only write your code here!
      var jam = menit/60
-     var  conjam = Math.floor(jam)
+     var conjam = Math.floor(jam)
      var menit=(jam-conjam) * 60
-     var conmenit = Math.round(menit)
-     var result = conjam + ':' + conmenit
+     var conmenit = String(Math.round(menit)) 
 
-    return result
+     if(conmenit.length === 1){
+       return conjam + ':0' + conmenit
+
+     }else{
+       return conjam + ':' + conmenit
+     }
+
   }
   
   // TEST CASES
