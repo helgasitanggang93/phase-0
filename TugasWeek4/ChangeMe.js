@@ -1,7 +1,7 @@
 function changeMe(arr) {
     // you can only write your code here!
     for(var i = 0; i < arr.length; i++){
-        console.log(i+1 + '.', arr[i][0], arr[i][0] + ':')
+        console.log(i+1 + '.', arr[i][0], arr[i][1] + ':')
         var obj = {}
         obj.firstName = arr[i][0]
         obj.lastName = arr[i][1]
