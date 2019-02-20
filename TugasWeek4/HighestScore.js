@@ -3,27 +3,25 @@ function highestScore (students) {
     var result = {}
     for(var i = 0; i < students.length; i++){
         if(result[students[i].class] === undefined){
-            result[students[i].class] = {}
+            result[students[i].class] = {
+                name : students[i].name,
+                score : students[i].score
+                
+            }
 
         }
-        var obj = {}
-        obj.nama = students[i].name
-        obj.score = students[i].score
-        for(var j = 0; j < students.length; j++){
-            if(students[i].class === students[j].class){
-                if(obj.score < students[j].score){
-                    obj.score = students[j].score
-    
-                }
+        if(result[students[i].class].score < students[i].score){
+            result[students[i].class] = { 
+                name: students[i].name,
+                score: students[i].score
 
             }
-            
-           
+
         }
-        result[students[i].class] = obj
-        
+
     }
     return result
+    
   }
   
   // TEST CASE
